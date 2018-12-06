@@ -1,0 +1,6 @@
+#!/bin/bash
+unmatches=(\.git \.*swp node_modules build/ ${@})
+unmatch="$(printf "|%s" "${unmatches[@]}")"
+unmatch="${unmatch:1}"
+
+egrep -v "($unmatch)" -

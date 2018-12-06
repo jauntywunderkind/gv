@@ -1,0 +1,4 @@
+#!/bin/sh
+unmatch="$1"
+[ -n "$1" ] && shift
+find . $* -type f| gv $unmatch| sort
