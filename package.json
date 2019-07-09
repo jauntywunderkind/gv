@@ -1,0 +1,15 @@
+{
+	"name": "gv",
+	"version": "1.0.0",
+	"description": "shell tools around grep -v filtering",
+	"scripts": {
+		"install": "./install.sh"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jauntywunderkind/gv"
+	},
+	"keywords": [],
+	"author": "jauntywunderkind",
+	"license": "MIT"
+}
