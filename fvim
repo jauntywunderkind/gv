@@ -1,4 +1,4 @@
 #!/bin/sh
 fgv_arg="$1"
 [ -n "$1" ] && shift
-vim $(fgv $fgv_arg) $*
+${EDITOR:-vim} $(fgv $fgv_arg) $*
