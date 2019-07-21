@@ -1,5 +1,5 @@
 #!/bin/bash
-unmatches=(\.git '\.*swp' node_modules build/ ${@})
+unmatches=(\.git '\.*swp' '\.*swo' node_modules build/ ${@})
 unmatch="$(printf "|%s" "${unmatches[@]}")"
 unmatch="${unmatch:1}"
 
