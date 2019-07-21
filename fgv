@@ -1,5 +1,5 @@
 #!/bin/sh
-[ "$VERBOSE" -gt 8 ] && set -x
+[ "${VERBOSE:-0}" -gt 8 ] && set -x
 unmatch="$1"
 [ -n "$1" ] && shift
 find ${*:-.} -type f| gv $unmatch| sort
